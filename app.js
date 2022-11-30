@@ -1,3 +1,5 @@
+import mongoose from "mongoose";
+mongoose.connect('mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority');
 import express from 'express';
 import cors from 'cors';
 import HelloController
