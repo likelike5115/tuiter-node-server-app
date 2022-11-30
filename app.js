@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
-mongoose.connect('mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority');
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+    || 'mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority'
+mongoose.connect(CONNECTION_STRING);
+//.connect('mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority');
 import express from 'express';
 import cors from 'cors';
 import HelloController
