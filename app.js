@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
-    || 'mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority'
+    || 'mongodb://localhost:27017/tuiter'
 mongoose.connect(CONNECTION_STRING);
 //.connect('mongodb+srv://like:1234@cluster0.vknhw7r.mongodb.net/?retryWrites=true&w=majority');
 import express from 'express';
